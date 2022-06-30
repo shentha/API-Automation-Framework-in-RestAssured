@@ -1,0 +1,299 @@
+<html>
+<head>
+<title>TestNG:  PostProduction Jobs API Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PostProduction Jobs API Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 22 12:17:39 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6865 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='jobsapiautomation.JobsDelete.deletePositiveCases()'><b>deletePositiveCases</b><br>Test class: jobsapiautomation.JobsDelete<br>Parameters: Delete existing JobId, 1, 1, 200</td>
+<td><div><pre>java.lang.AssertionError: 
+Expected: a value equal to &lt;200&gt;
+     got: &lt;404&gt;
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace459859494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace459859494'><pre>java.lang.AssertionError: 
+Expected: a value equal to &lt;200&gt;
+     got: &lt;404&gt;
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</pre></div></td>
+<td>0</td>
+<td>jobsapiautomation.JobsDelete@53fdffa1</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsDelete.deletePositiveCases()'><b>deletePositiveCases</b><br>Test class: jobsapiautomation.JobsDelete<br>Parameters: Delete existing JobId, 2, 3, 200</td>
+<td><div><pre>java.lang.AssertionError: 
+Expected: a value equal to &lt;200&gt;
+     got: &lt;404&gt;
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1527270476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1527270476'><pre>java.lang.AssertionError: 
+Expected: a value equal to &lt;200&gt;
+     got: &lt;404&gt;
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:178)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:96)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</pre></div></td>
+<td>0</td>
+<td>jobsapiautomation.JobsDelete@53fdffa1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='jobsapiautomation.JobsDelete.deleteProgramNegativeCases()'><b>deleteProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsDelete<br>Parameters: Delete non existing JobId, 1050, 2, 404</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsDelete@53fdffa1</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsDelete.deleteProgramNegativeCases()'><b>deleteProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsDelete<br>Parameters: Delete non existing JobId, "20FT", 4, 404</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsDelete@53fdffa1</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsGet.getRequestNegative()'><b>getRequestNegative</b><br>Test class: jobsapiautomation.JobsGet<br>Parameters: Get IncorrectURL: "https://jobs123.herokuapp.com/Job", 3, 404</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsGet@4d0f2471</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsGet.getRequestPositive()'><b>getRequestPositive</b><br>Test class: jobsapiautomation.JobsGet<br>Parameters: GetAll, 2, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsGet@4d0f2471</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create with Existing JobId, {Job Location=Atlanta, Job Id=1018, Job Company Name=Connected Cars, Job Posted time=15 mins, Job Description=Selenium Postman, Job Title=SDET, Job Type=Contract}, 2, 409</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job Location, {Job Id=1600, Job Company Name=CTS, Job Posted time=5 mins, Job Description=API Testing with Postman, Job Title=API Testing, Job Type=Full Time}, 3, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job CompanyName, {Job Location=California, Job Id=1600, Job Posted time=5 mins, Job Description=API Testing with Postman, Job Title=API Testing, Job Type=Contract}, 4, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job Type, {Job Location=Wisconsin, Job Id=1500, Job Company Name=Cox, Job Posted time=10 mins, Job Description=Automation Testing, Job Title=SDET}, 7, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job Posted time, {Job Location=Canada, Job Id=1500, Job Company Name=Facebook, Job Description=API Testing with Postman, Job Title=API Testing, Job Type=Full Time}, 8, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job Id, {Job Location=Wisconsin, Job Company Name=Cox, Job Posted time=10 mins, Job Description=Automation Testing, Job Title=SDET, Job Type=Contract}, 9, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a new Job without Job Title, {Job Location=NewYork, Job Id=4000, Job Company Name=Wipro, Job Posted time=4 hrs, Job Description=API Developer, Job Type=Contract, Third Party}, 10, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: New JobId with all assigned values, {Job Location=Texas, Job Id=4143, Job Company Name=Macys, Job Posted time=20 mins, Job Description=API Automation, Job Title=SDET, Job Type=Full Time}, 1, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: Create a newJob with alphanumeric JobId, {Job Location=NewYork, Job Id=20GE, Job Company Name=Wipro, Job Posted time=4 hrs, Job Description=Testing, Job Title=SDET, Job Type=Contract, Third Party}, 5, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: jobsapiautomation.JobsPost<br>Parameters: New JobId with alphaNumeric JobTitle, {Job Location=NewJersey, Job Id=2014, Job Company Name=AT&T, Job Posted time=45 mins, Job Description=RestAssured Postman, Job Title=Testing-05, Job Type=Full Time}, 6, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPost@5562c41e</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPut.putNegativeCases()'><b>putNegativeCases</b><br>Test class: jobsapiautomation.JobsPut<br>Parameters: Update non existing JobId, 4103, SDET, 2, 404</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPut@32ee6fee</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPut.putNegativeCases()'><b>putNegativeCases</b><br>Test class: jobsapiautomation.JobsPut<br>Parameters: JobId is null, , SDET, 3, 400</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPut@32ee6fee</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: jobsapiautomation.JobsPut<br>Parameters: Update existing JobId, 1005, Updating JobTitle for 1005- SDET, 1, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPut@32ee6fee</td></tr>
+<tr>
+<td title='jobsapiautomation.JobsPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: jobsapiautomation.JobsPut<br>Parameters: Update existing JobId, 1010, SDET-Updating 1010 , 4, 200</td>
+<td></td>
+<td>0</td>
+<td>jobsapiautomation.JobsPut@32ee6fee</td></tr>
+</table><p>
+</body>
+</html>

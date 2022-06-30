@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>TestNG:  PostProduction LMS API Automation</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>PostProduction LMS API Automation</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 09 17:21:22 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18826 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lmsapiautomation.LMSDelete.deletePositiveCases()'><b>deletePositiveCases</b><br>Test class: lmsapiautomation.LMSDelete<br>Parameters: Delete Existing ProgramId, 8560, 1, 200</td>
+<td><div><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at lmsapiautomation.LMSDelete.deletePositiveCases(LMSDelete.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace551104286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace551104286'><pre>java.lang.AssertionError: expected [200] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at lmsapiautomation.LMSDelete.deletePositiveCases(LMSDelete.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>lmsapiautomation.LMSDelete@5ab956d7</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='lmsapiautomation.LMSDelete.deleteProgramNegativeCases()'><b>deleteProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSDelete<br>Parameters: Delete Non Existing ProgramId, 9989, 2, 500</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSDelete@5ab956d7</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSDelete.deleteProgramNegativeCases()'><b>deleteProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSDelete<br>Parameters: ProgramId Null, , 3, 405</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSDelete@5ab956d7</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSDelete.deleteProgramNegativeCases()'><b>deleteProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSDelete<br>Parameters: ProgramId AlphaNum, def89, 4, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSDelete@5ab956d7</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestNegative()'><b>getRequestNegative</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: GET AlphaNumeric ProgramId, abc115, 5, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestNegative()'><b>getRequestNegative</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: GET IncorrectURL : "https://lms-admin-rest-service.herokuapp.com/program", , 6, 404</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestNegative()'><b>getRequestNegative</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: GET Without Authorization, , 7, 401</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestPositive()'><b>getRequestPositive</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: Get All, , 1, 200</td>
+<td></td>
+<td>1</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestPositive()'><b>getRequestPositive</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: Get Existing ProgramId, 1153, 2, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestPositive()'><b>getRequestPositive</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: Get ProgramId 0, 0, 3, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSGet.getRequestPositive()'><b>getRequestPositive</b><br>Test class: lmsapiautomation.LMSGet<br>Parameters: Non Existing ProgramId, 10500, 4, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSGet@6892b3b6</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST Alpha Numeric ProgramId, {programDescription=RestAssured Postman, programName=API Testing, online=TRUE, programId=abc123}, 7, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST Nonboolean in Online, {programDescription=API Automation Testing, programName=SDET, online=Happy, programId=}, 8, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST No ProgramName, {programDescription=Selenium Cucumber, programName=, online=TRUE, programId=}, 9, 500</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramNegativeCases()'><b>postProgramNegativeCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: Online Field blank, {programDescription=Selenium Cucumber, programName=SDET, online=, programId=}, 10, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST ProgramId 0, {programDescription=Selenium Postman, programName=SDET, online=TRUE, programId=0}, 1, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST ProgramName Integer, {programDescription=Manual Testing, programName=1234, online=TRUE, programId=}, 2, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST ProgramDescription Blank, {programDescription=, programName=Blank testing, online=FALSE, programId=}, 3, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST Online Field Blank, {programDescription=RestAssured Postman, programName=API Testing, online=, programId=}, 4, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST Number in Online Field, {programDescription=Selenium, programName=SDET, online=TRUE, programId=}, 5, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPost.postProgramPositiveCases()'><b>postProgramPositiveCases</b><br>Test class: lmsapiautomation.LMSPost<br>Parameters: POST ProgramId HugeNumber, {programDescription=Selenium Postman, programName=API Testing, online=FALSE, programId=184467440737095008}, 6, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPost@7526515b</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putNegativeCases()'><b>putNegativeCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: ProgramId Null, {programDescription=Selenium CucumberBDD, programName=UI Testing, online=TRUE, programId=}, 8, 405</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putNegativeCases()'><b>putNegativeCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: ProgramId AlphaNumeric, {programDescription=RestAssured Postman, programName=API Testing, online=FALSE, programId=90kl}, 9, 400</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Update Existing Record, {programDescription=API Automation Testing, programName=Automation Testing, online=FALSE, programId=1153}, 1, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Update Non Existing ProgramId, {programDescription=Testing, programName=Testing, online=TRUE, programId=20000}, 2, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Update Program Desc, {programDescription=Selenium CucumberBDD, programName=Testing, online=TRUE, programId=5850}, 3, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Update Program Desc with No or AlphaNum, {programDescription=800, programName=Testing, online=FALSE, programId=5025}, 4, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Program Name is given Spec Char, {programDescription=API Testing, programName=&%Test, online=TRUE, programId=1849}, 5, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: Program Name is Decimal, {programDescription=Selenium, programName=0.0009, online=FALSE, programId=3730}, 6, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+<tr>
+<td title='lmsapiautomation.LMSPut.putPositiveCases()'><b>putPositiveCases</b><br>Test class: lmsapiautomation.LMSPut<br>Parameters: NonExisting ProgramId, {programDescription=AutomationTesting, programName=Testing, online=TRUE, programId=10000}, 7, 200</td>
+<td></td>
+<td>0</td>
+<td>lmsapiautomation.LMSPut@644baf4a</td></tr>
+</table><p>
+</body>
+</html>

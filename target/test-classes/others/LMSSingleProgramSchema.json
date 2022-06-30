@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "required": [
+        "programId",
+        "programName",
+        "programDescription",
+        "online"
+    ],
+    "properties": {
+        "programId": {
+            "$id": "#/properties/programId",
+            "type": "integer",
+            "title": "The programId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0
+        },
+        "programName": {
+            "$id": "#/properties/programName",
+            "type": "string",
+            "title": "The programName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "programDescription": {
+            "$id": "#/properties/programDescription",
+            "type": "string",
+            "title": "The programDescription schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": ""
+        },
+        "online": {
+            "$id": "#/properties/online",
+            "type": "boolean",
+            "title": "The online schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false
+        }
+    },
+    "additionalProperties": true
+}

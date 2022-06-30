@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" verbose="10">
+  <test name="PostProduction LMS API Automation(failed)">
+    <classes>
+      <class name="jobsapiautomation.JobsGet">
+        <methods>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- jobsapiautomation.JobsGet -->
+      <class name="lmsapiautomation.LMSDelete">
+        <methods>
+          <include name="deletePositiveCases" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- lmsapiautomation.LMSDelete -->
+      <class name="lmsapiautomation.LMSGet">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- lmsapiautomation.LMSGet -->
+    </classes>
+  </test> <!-- PostProduction LMS API Automation(failed) -->
+  <test name="PostProduction Jobs API Automation(failed)">
+    <classes>
+      <class name="jobsapiautomation.JobsGet">
+        <methods>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- jobsapiautomation.JobsGet -->
+      <class name="jobsapiautomation.JobsPost">
+        <methods>
+          <include name="postProgramPositiveCases" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- jobsapiautomation.JobsPost -->
+      <class name="jobsapiautomation.JobsDelete">
+        <methods>
+          <include name="deletePositiveCases" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- jobsapiautomation.JobsDelete -->
+      <class name="lmsapiautomation.LMSGet">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="BeforeTest"/>
+        </methods>
+      </class> <!-- lmsapiautomation.LMSGet -->
+    </classes>
+  </test> <!-- PostProduction Jobs API Automation(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

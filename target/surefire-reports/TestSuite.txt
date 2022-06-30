@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 51, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 27.323 sec <<< FAILURE!
+deletePositiveCases(lmsapiautomation.LMSDelete)  Time elapsed: 0.392 sec  <<< FAILURE!
+java.lang.AssertionError: expected [8563] but found [500]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:370)
+	at org.testng.Assert.assertEquals(Assert.java:380)
+	at lmsapiautomation.LMSDelete.deletePositiveCases(LMSDelete.java:28)
+
+deletePositiveCases(jobsapiautomation.JobsDelete)  Time elapsed: 0.234 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a value equal to <200>
+     got: <404>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+
+deletePositiveCases(jobsapiautomation.JobsDelete)  Time elapsed: 0.248 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: a value equal to <200>
+     got: <404>
+
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:738)
+	at jobsapiautomation.JobsDelete.deletePositiveCases(JobsDelete.java:39)
+
